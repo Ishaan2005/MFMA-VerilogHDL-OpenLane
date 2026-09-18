@@ -1,4 +1,4 @@
-# Multiply-Accumulate (MAC) Unit — RTL to GDSII with OpenLane
+# Matrix Fused Multiply ADD - MFMA - RTL to GDSII with OpenLane
 
 ![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 ![Language: Verilog](https://img.shields.io/badge/Language-Verilog%20HDL-brightgreen.svg)

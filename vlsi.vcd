@@ -1,0 +1,314 @@
+$date
+	Sun Sep 27 23:41:47 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mac_top $end
+$var wire 7 ! accumulator [6:0] $end
+$var parameter 32 " k $end
+$var reg 1 # clk $end
+$var reg 3 $ in1 [2:0] $end
+$var reg 3 % in2 [2:0] $end
+$var reg 1 & rst $end
+$scope module v1 $end
+$var wire 1 # clk $end
+$var wire 3 ' in1 [2:0] $end
+$var wire 3 ( in2 [2:0] $end
+$var wire 1 & rst $end
+$var wire 8 ) next_acc [7:0] $end
+$var wire 6 * int_mult [5:0] $end
+$var wire 7 + add_sum [6:0] $end
+$var wire 1 , add_cout $end
+$var parameter 32 - k $end
+$var reg 7 . accumulator [6:0] $end
+$scope module a1 $end
+$var wire 7 / A [6:0] $end
+$var wire 7 0 B [6:0] $end
+$var wire 1 1 Cin $end
+$var wire 7 2 sum [6:0] $end
+$var wire 1 , carry $end
+$var wire 7 3 P [6:0] $end
+$var wire 7 4 G [6:0] $end
+$var wire 8 5 C [7:0] $end
+$var parameter 65 6 k $end
+$scope begin for_loop[0] $end
+$var parameter 2 7 i $end
+$upscope $end
+$scope begin for_loop[1] $end
+$var parameter 2 8 i $end
+$upscope $end
+$scope begin for_loop[2] $end
+$var parameter 3 9 i $end
+$upscope $end
+$scope begin for_loop[3] $end
+$var parameter 3 : i $end
+$upscope $end
+$scope begin for_loop[4] $end
+$var parameter 4 ; i $end
+$upscope $end
+$scope begin for_loop[5] $end
+$var parameter 4 < i $end
+$upscope $end
+$scope begin for_loop[6] $end
+$var parameter 4 = i $end
+$upscope $end
+$upscope $end
+$scope module m1 $end
+$var wire 3 > in1 [2:0] $end
+$var wire 3 ? in2 [2:0] $end
+$var wire 6 @ out [5:0] $end
+$var parameter 32 A k $end
+$scope begin for_one[0] $end
+$var parameter 2 B i $end
+$scope begin for_two[0] $end
+$var parameter 2 C j $end
+$upscope $end
+$scope begin for_two[1] $end
+$var parameter 2 D j $end
+$upscope $end
+$scope begin for_two[2] $end
+$var parameter 3 E j $end
+$upscope $end
+$upscope $end
+$scope begin for_one[1] $end
+$var parameter 2 F i $end
+$scope begin for_two[0] $end
+$var parameter 2 G j $end
+$upscope $end
+$scope begin for_two[1] $end
+$var parameter 2 H j $end
+$upscope $end
+$scope begin for_two[2] $end
+$var parameter 3 I j $end
+$upscope $end
+$upscope $end
+$scope begin for_one[2] $end
+$var parameter 3 J i $end
+$scope begin for_two[0] $end
+$var parameter 2 K j $end
+$upscope $end
+$scope begin for_two[1] $end
+$var parameter 2 L j $end
+$upscope $end
+$scope begin for_two[2] $end
+$var parameter 3 M j $end
+$upscope $end
+$upscope $end
+$scope begin genblk2 $end
+$var wire 2 N inter_carry [1:0] $end
+$var wire 6 O int_sum [5:0] $end
+$scope module r1 $end
+$var wire 6 P A [5:0] $end
+$var wire 6 Q B [5:0] $end
+$var wire 1 R Cin $end
+$var wire 6 S sum [5:0] $end
+$var wire 1 T carry $end
+$var wire 6 U P [5:0] $end
+$var wire 6 V G [5:0] $end
+$var wire 7 W C [6:0] $end
+$var parameter 64 X k $end
+$scope begin for_loop[0] $end
+$var parameter 2 Y i $end
+$upscope $end
+$scope begin for_loop[1] $end
+$var parameter 2 Z i $end
+$upscope $end
+$scope begin for_loop[2] $end
+$var parameter 3 [ i $end
+$upscope $end
+$scope begin for_loop[3] $end
+$var parameter 3 \ i $end
+$upscope $end
+$scope begin for_loop[4] $end
+$var parameter 4 ] i $end
+$upscope $end
+$scope begin for_loop[5] $end
+$var parameter 4 ^ i $end
+$upscope $end
+$upscope $end
+$scope module r2 $end
+$var wire 6 _ A [5:0] $end
+$var wire 6 ` B [5:0] $end
+$var wire 1 a Cin $end
+$var wire 6 b sum [5:0] $end
+$var wire 1 c carry $end
+$var wire 6 d P [5:0] $end
+$var wire 6 e G [5:0] $end
+$var wire 7 f C [6:0] $end
+$var parameter 64 g k $end
+$scope begin for_loop[0] $end
+$var parameter 2 h i $end
+$upscope $end
+$scope begin for_loop[1] $end
+$var parameter 2 i i $end
+$upscope $end
+$scope begin for_loop[2] $end
+$var parameter 3 j i $end
+$upscope $end
+$scope begin for_loop[3] $end
+$var parameter 3 k i $end
+$upscope $end
+$scope begin for_loop[4] $end
+$var parameter 4 l i $end
+$upscope $end
+$scope begin for_loop[5] $end
+$var parameter 4 m i $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101 m
+b100 l
+b11 k
+b10 j
+b1 i
+b0 h
+b110 g
+b101 ^
+b100 ]
+b11 \
+b10 [
+b1 Z
+b0 Y
+b110 X
+b10 M
+b1 L
+b0 K
+b10 J
+b10 I
+b1 H
+b0 G
+b1 F
+b10 E
+b1 D
+b0 C
+b0 B
+b11 A
+b110 =
+b101 <
+b100 ;
+b11 :
+b10 9
+b1 8
+b0 7
+b111 6
+b11 -
+b11 "
+$end
+#0
+$dumpvars
+b0 f
+b0 e
+b0 d
+0c
+b0 b
+0a
+b0 `
+b0 _
+b0 W
+b0 V
+b0 U
+0T
+b0 S
+0R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 @
+b0 ?
+b0 >
+b0 5
+b0 4
+b0 3
+b0 2
+01
+b0 0
+b0 /
+b0 .
+0,
+b0 +
+b0 *
+b0 )
+b0 (
+b0 '
+1&
+b0 %
+b0 $
+0#
+b0 !
+$end
+#5000
+1#
+#9000
+0&
+#10000
+0#
+#15000
+1#
+#20000
+0#
+#22000
+b111000 f
+b110001 )
+b110001 +
+b110001 2
+b10100 e
+b110001 3
+b110001 0
+b110001 *
+b110001 @
+b110001 b
+b10101 O
+b10101 S
+b10101 `
+b11100 W
+b1001 d
+b1001 U
+b110 V
+b1110 Q
+b11100 _
+b111 P
+b111 %
+b111 (
+b111 ?
+b111 $
+b111 '
+b111 >
+#25000
+b1100010 )
+b1100010 +
+b1100010 2
+b1100010 5
+b0 3
+b110001 4
+b110001 !
+b110001 .
+b110001 /
+1#
+#30000
+0#
+#35000
+1,
+b11000000 5
+b10010011 )
+b10011 +
+b10011 2
+b100000 4
+b1010011 3
+b1100010 !
+b1100010 .
+b1100010 /
+1#
+#40000
+0#
+#44000

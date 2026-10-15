@@ -1,19 +1,22 @@
 //multiplier
 module multiplier #(parameter k = 3)(input[k-1:0]in1,in2,output[2*k-1:0]out);
-wire [k-1:0]y[k-1:0];
-wire [2*k-1:0]z[k-1:0];
-genvar i,j;
+wire [k-1:0]y[k-1:0]; // initial unshifted 3 bit products. 3 vectors each 3 bits wide.
+wire [2*k-1:0]z[k-1:0]; //products after shiting or apending with zeroes, 3 vecctors each 6 bits wide.
+genvar i,j; 
 generate 
 	for(i = 0;i < k; i= i+1)begin:for_one
 		for(j = 0; j < k; j = j+1)begin:for_two
-			and(y[i][j],in2[j],in1[i]);
+			and(y[i][j],in2[j],in1[i]); //multiplies 2 3 bit numbers  
+            //y[0][0] y[0][1] y[0][2]
+            //y[1][0] y[1][1] y[1][2]
+            //y[2][0] y[2][1] y[2][3] 3 vectors, 3 bit wide each 
 		end
-	assign z[i] = {{(k){1'b0}}, y[i]} << i;	
+	assign z[i] = {{(k){1'b0}}, y[i]} << i;	// then store the appended 6 bit numbers in z 
 	end 
 
-	if(k == 1)
+	if(k == 1) //for single bit multiplication, only y[0][0] will be present
 		assign out = y[0][0];
-	else begin
+	else begin 
 		wire[2*k-1:0]int_sum;
 		wire [k-2:0]inter_carry;
 		ripple_adder #(.k(2*k))r1(.A(z[0]),.B(z[1]),.Cin(1'b0),.carry(inter_carry[0]),.sum(int_sum));
@@ -65,6 +68,6 @@ always @(posedge clk or posedge rst) begin
 	if (rst)
 		accumulator <= 0;
    else
-      accumulator <= next_acc;
+        accumulator <= next_acc;
 end
 endmodule 
